@@ -27,3 +27,25 @@ ul {
   font-size: 3rem;
   color: red;
 }
+
+.card-details {
+  width: 80rem;
+  margin: 0 auto;
+  background-color: rgba(240, 248, 255, 0.265);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  overflow: auto;
+}
+
+.card-details h2 {
+  font-size: 5rem;
+}
+
+.card-details p {
+  margin: 5rem 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
