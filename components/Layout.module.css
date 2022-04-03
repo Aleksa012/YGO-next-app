@@ -1,0 +1,19 @@
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  min-height: 65rem;
+  top: 0;
+  z-index: -100;
+}
+
+.content {
+  position: relative;
+  width: 80vw;
+  min-width: 60rem;
+  margin: 5rem auto;
+  height: 70rem;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,14 @@
+.side-sheet {
+  background-color: rgba(255, 68, 0, 0.612);
+  border: 2px solid orangered;
+  border-left: none;
+  width: 32rem;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.side-sheet ul {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
