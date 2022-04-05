@@ -10,6 +10,7 @@ function CardSet() {
   const set = router.query["card-set"];
 
   useEffect(() => {
+    if (!set) return;
     const fetchData = async function () {
       const data = await fetch(
         `https://db.ygoprodeck.com/api/v7/cardinfo.php?cardset=${set}`

@@ -7,7 +7,8 @@ function Card(props) {
   return (
     <div className={classes.card}>
       <Image layout="fill" src={props.img} />
-      <Link href={`/${props.id}`}>See More</Link>
+      <Link href={`/${props.id}`}>Details</Link>
+      <div className={classes.shadow}></div>
     </div>
   );
 }

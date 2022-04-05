@@ -24,6 +24,9 @@
 
 .header li {
   margin: 0 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
 }
 
 .header a {
@@ -36,4 +39,33 @@
   background-color: #000;
   color: orangered;
   transform: scaleX(1.1);
+}
+
+.header li:nth-child(3) {
+  padding: 0.5rem 1rem;
+  transition: 0.4s all ease-out;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 20;
+}
+.header li:nth-child(3):hover {
+  background-color: #000;
+  color: orangered;
+  transform: scaleX(1.1);
+}
+
+.banlists {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: orangered;
+  border: 1px solid #333;
+  box-shadow: 0 0 2rem #000;
+  top: 30px;
+  left: 0;
+  transition: all 0.4s;
+  padding: 2rem;
+  z-index: 50;
 }

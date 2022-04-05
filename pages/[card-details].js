@@ -10,6 +10,7 @@ function CardDetails() {
   const cardId = router.query["card-details"];
 
   useEffect(() => {
+    if (!cardId) return;
     async function getCard() {
       const data = await fetch(
         `https://db.ygoprodeck.com/api/v7/cardinfo.php?id=${cardId}`

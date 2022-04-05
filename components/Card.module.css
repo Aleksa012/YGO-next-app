@@ -12,13 +12,40 @@
   transform: scale(1.1);
 }
 
+.shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(240, 248, 255, 0.342);
+  z-index: -5;
+}
+
 .card a {
   position: absolute;
-  z-index: 20;
   font-size: 2rem;
+  z-index: -5;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: aliceblue;
+  color: rgb(245, 114, 7);
   font-weight: bolder;
+  transition: 0.3s all;
+  padding: 0.2rem 0.5rem;
+  border: 2px solid orangered;
+  width: 80%;
+  text-align: center;
+}
+
+.card:hover a {
+  z-index: 20;
+}
+
+.card a:hover {
+  background-color: black;
+}
+
+.card:hover .shadow {
+  z-index: 5;
 }
