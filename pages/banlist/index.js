@@ -18,7 +18,6 @@ function BanlistPage() {
         .then((res) => res.json())
         .then((data) => {
           setCards(data.data);
-          console.log(data.data);
         });
     }
     fetchBanlist();
